@@ -1,13 +1,15 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import NavBar from "@/components/NavBar"
+import { Html, Head, Main, NextScript } from "next/document"
 
 export default function Document() {
-  return (
-    <Html lang="en">
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  )
+	return (
+		<Html lang="en">
+			<Head />
+			<body className="bg-gray-800">
+				<NavBar />
+				<Main />
+				<NextScript />
+			</body>
+		</Html>
+	)
 }
