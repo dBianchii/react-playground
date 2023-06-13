@@ -3,6 +3,10 @@ import Link from "next/link"
 export default function NavBar() {
 	const links = [
 		{
+			href: "/useState",
+			text: "useState",
+		},
+		{
 			href: "/useEffect",
 			text: "useEffect",
 		},

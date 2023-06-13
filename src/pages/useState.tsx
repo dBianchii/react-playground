@@ -5,13 +5,13 @@ export default function UseState() {
 
 	return (
 		<>
-			<div className="flex flex-col">
-				<p className="text-4xl text-center inline text-white">Count: {count}</p>
-
+			<div className="flex p-44 flex-col items-center">
 				<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full max-w-xs" onClick={() => setCount(count + 1)}>
-					Button
+					Add
 				</button>
-				<button className="text-4xl text-center inline text-white" onClick={() => setCount(count - 1)}>
+				<p className="text-4xl my-4 text-center inline text-white">Count: {count}</p>
+
+				<button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full max-w-xs" onClick={() => setCount(count - 1)}>
 					Decrement
 				</button>
 			</div>
